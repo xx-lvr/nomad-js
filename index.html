@@ -2,35 +2,75 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- 문서의 인코딩 방식 설정 (UTF-8) -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 뷰포트 메타 태그로 반응형 디자인을 지원 -->
+
     <link rel="stylesheet" href="style.css" />
+    <!-- 외부 CSS 파일을 연결 (style.css) -->
+
     <title>Momentum App</title>
+    <!-- 페이지의 제목을 'Momentum App'으로 설정 -->
   </head>
   <body>
     <form class="hidden" id="login-form">
+      <!-- 로그인 폼. 기본적으로 숨겨져 있음 (hidden 클래스 적용) -->
       <input
         required
         maxlength="15"
         type="text"
         placeholder="What is your name?"
       />
+      <!-- 사용자가 이름을 입력할 수 있는 텍스트 필드 (최대 15글자) -->
+
       <input type="submit" value="Log In" />
+      <!-- 로그인 버튼 -->
     </form>
+
     <h2 id="clock">00:00:00</h2>
+    <!-- 시계를 표시하는 <h2> 요소 (초기값은 00:00:00) -->
+
     <h1 id="greeting" class="hidden"></h1>
+    <!-- 로그인 후 인사말을 표시하는 <h1> 요소 (처음엔 숨겨져 있음) -->
+
     <form id="todo-form">
+      <!-- 할 일을 입력하는 To Do 폼 -->
       <input type="text" placeholder="Write a To Do and Press Enter" required/>
+      <!-- 할 일을 입력할 텍스트 필드 -->
     </form>
+
     <ul id="todo-list"></ul>
+    <!-- 할 일 목록을 표시할 <ul> 요소 -->
+
     <div id="quote">
       <span></span>
       <span></span>
+      <!-- 명언과 저자를 표시할 <span> 요소 두 개 -->
     </div>
+
+    <div id="weather">
+      <span></span>
+      <span></span>
+      <!-- 날씨 정보와 위치를 표시할 <span> 요소 두 개 -->
+    </div>
+
     <script src="js/greetings.js"></script>
+    <!-- 인사말 관련 JavaScript 파일 연결 -->
+
     <script src="js/clock.js"></script>
+    <!-- 시계 관련 JavaScript 파일 연결 -->
+
     <script src="js/quotes.js"></script>
+    <!-- 명언 관련 JavaScript 파일 연결 -->
+
     <script src="js/background.js"></script>
+    <!-- 배경 이미지 관련 JavaScript 파일 연결 -->
+
     <script src="js/todo.js"></script>
+    <!-- To Do 리스트 관련 JavaScript 파일 연결 -->
+
     <script src="js/weather.js"></script>
+    <!-- 날씨 정보 관련 JavaScript 파일 연결 -->
   </body>
 </html>
